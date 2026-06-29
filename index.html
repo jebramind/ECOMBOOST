@@ -7,140 +7,889 @@
     <title>Document</title>
 </head>
 <body>
-    html
+    
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EcomBoost</title>
 
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- Tajawal Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>EcomBoost</title>
+
 </head>
+
 <body>
 
-<nav class="navbar">
+<header>
 
-    <div class="logo">
-        ECOM<span>BOOST</span>
-    </div>
+    <nav class="navbar">
 
-    <ul class="nav-links">
-        <li><a href="#">الرئيسية</a></li>
-        <li><a href="#">أعمالنا</a></li>
-        <li><a href="services.html">الخدمات</a></li>
-        <li><a href="#">الأسعار</a></li>
-        <li><a href="contact.html">تواصل معنا</a></li>
-    </ul>
+        <a href="#" class="logo">
+            <span>Ecom</span>Boost
+        </a>
 
-    <a href="#" class="nav-btn">احجز استشارة مجانية</a>
+        <ul class="nav-links">
 
-</nav>
+            <li><a href="#">الرئيسية</a></li>
 
+            <li><a href="#">الخدمات</a></li>
+
+            <li><a href="#">الباقات</a></li>
+
+            <li><a href="#">الأسئلة الشائعة</a></li>
+
+            <li><a href="#">تواصل معنا</a></li>
+
+        </ul>
+
+        <a href="#" class="btn-nav">
+            احجز استشارة
+        </a>
+
+        <div class="menu-btn">
+
+            ☰
+
+        </div>
+
+    </nav>
+
+</header>
+
+<div class="mobile-menu">
+
+    <a href="#">الرئيسية</a>
+
+    <a href="#">الخدمات</a>
+
+    <a href="#">الباقات</a>
+
+    <a href="#">الأسئلة الشائعة</a>
+
+    <a href="#">تواصل معنا</a>
+
+    <a href="#" class="mobile-btn">
+        احجز استشارة
+    </a>
+
+</div>
+
+<script>
+
+const menu=document.querySelector(".menu-btn");
+
+const mobile=document.querySelector(".mobile-menu");
+
+menu.onclick=()=>{
+
+mobile.classList.toggle("active");
+
+}
+
+</script>
+
+</body>
+
+</html>
 <section class="hero">
 
-    <div class="hero-content">
+    <div class="hero-container">
 
-        <div class="badge">
-            🚀 متاجر احترافية مصممة لتحقيق النمو
+        <div class="hero-badge">
+
+            🚀 شريكك المثالي للنجاح في التجارة الإلكترونية
+
         </div>
 
         <h1>
-            تميز عن المنافسين
-            <span>بمستوى العلامات التجارية الكبرى</span>
+
+            كل خطوة نحو النجاح 
+
+            <span>
+
+               تبدأ باستراتيجية واضحة.
+            </span>
+
         </h1>
 
         <p>
-            نصمم متاجر إلكترونية احترافية تساعدك على بناء علامة تجارية موثوقة،
-            زيادة معدل التحويل، وتحقيق المزيد من المبيعات.
+
+          من التخطيط إلى التنفيذ، نرافقك في كل مرحلة لبناء متجر يحقق مبيعات وأرباح في أقل من 30 يوم .
         </p>
+
+        <div class="hero-buttons">
+
+            <a href="#" class="primary-btn">
+
+                ابدأ الآن
+
+            </a>
+
+            <a href="#" class="secondary-btn">
+
+                استكشف الباقات
+
+            </a>
+
+        </div>
+
+        <div class="hero-features">
+
+            <span>✔ تحليل السوق</span>
+
+            <span>✔ اختيار المنتج</span>
+
+            <span>✔ بناء متجر Branded</span>
+
+            <span>✔ صفحات الهبوط</span>
+
+            <span>✔ فيديوهات إعلانية</span>
+
+            <span>✔ دورات مختصرة</span>
+
+            <span>✔ الإعلانات المدفوعة </span>
+
+            <span>✔ التوسع وزيادة المبيعات</span>
+
+            <span>✔ اجتماعات أسبوعية</span>
+
+            <span>✔ دعم مستمر</span>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+<section class="accordion-section">
+
+    <h2 class="accordion-title">
+        ماذا ستحصل عليه؟
+    </h2>
+
+    <div class="accordion">
+
+        <!-- المرحلة الأولى -->
+
+        <div class="accordion-item active">
+
+            <button class="accordion-header">
+
+                <span>🔍 المرحلة الأولى: البحث والتحليل</span>
+
+                <span class="icon">+</span>
+
+            </button>
+
+            <div class="accordion-content">
+
+                <ul>
+
+                    <li>تحليل السوق المستهدف.</li>
+                    <li>البحث عن أفضل منتج قابل للنجاح.</li>
+                    <li>تحليل المنتج بشكل كامل.</li>
+                    <li>تحليل المنافسين.</li>
+                    <li>تحليل الزوايا التسويقية.</li>
+                    <li>تقرير احترافي للهوكات وصفحة الهبوط والكرييتيف.</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- المرحلة الثانية -->
+
+        <div class="accordion-item">
+
+            <button class="accordion-header">
+
+                <span>🚀 المرحلة الثانية: إطلاق الحملات</span>
+
+                <span class="icon">+</span>
+
+            </button>
+
+            <div class="accordion-content">
+
+                <ul>
+
+                    <li>اختيار منصة الإعلان المناسبة.</li>
+                    <li>تجهيز الحساب الإعلاني.</li>
+                    <li>إعداد الحملات.</li>
+                    <li>إطلاق أول حملة.</li>
+                    <li>استراتيجية اختبار بأقل تكلفة.</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- المرحلة الثالثة -->
+
+        <div class="accordion-item">
+
+            <button class="accordion-header">
+
+                <span>📈 المرحلة الثالثة: المتابعة والتحسين</span>
+
+                <span class="icon">+</span>
+
+            </button>
+
+            <div class="accordion-content">
+
+                <ul>
+
+                    <li>تحليل الأداء يوميًا.</li>
+                    <li>تحسين الحملات.</li>
+                    <li>تقليل تكلفة الـ CPL.</li>
+                    <li>Optimization مستمر.</li>
+                    <li>الوصول لأفضل أداء ممكن.</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- المرحلة الرابعة -->
+
+        <div class="accordion-item">
+
+            <button class="accordion-header">
+
+                <span>🤝 الدعم والمتابعة</span>
+
+                <span class="icon">+</span>
+
+            </button>
+
+            <div class="accordion-content">
+
+                <ul>
+
+                    <li>اجتماع أسبوعي.</li>
+                    <li>دعم عبر WhatsApp.</li>
+                    <li>Google Sheets.</li>
+                    <li>مكتبة دورات EcomBoost.</li>
+                    <li>متابعة شخصية.</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+
+document.querySelectorAll(".accordion-header").forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+const item=button.parentElement;
+
+item.classList.toggle("active");
+
+});
+
+});
+
+</script>
+
+<section class="pricing-section">
+
+    <div class="pricing-card">
+
+        <div class="popular">
+            الأكثر اختيارًا
+        </div>
+
+        <div class="plan-header">
+
+            <span class="plan-icon">⚡</span>
+
+            <h2>باقة Launch</h2>
+
+            <p class="price">
+                <span>$200</span>
+                <small>/ شهريًا</small>
+            </p>
+
+            <div class="split-payment">
+                الدفع على دفعتين
+            </div>
+
+            <p class="description">
+انطلق بمتجرك مع فريق يرافقك خطوة بخطوة، من اختيار المنتج حتى إطلاق الحملات وتحقيق أول نتائج مستقرة.
+        </div>
+
+        <a href="#" class="cta-btn">
+            ابدأ الآن
+        </a>
+
+        <div class="divider"></div>
 
         <div class="features">
 
             <div class="feature">
-                <h3>🏆 حوّل منتجك إلى علامة تجارية موثوقة تجذب العملاء</h3>
+                <span>📊</span>
+                <div>
+                    <h3>تحليل السوق والمنافسين</h3>
+                    <p>بناء استراتيجية واضحة مبنية على البيانات.</p>
+                </div>
             </div>
 
             <div class="feature">
-                <h3>🌍 متوافق مع جميع طرق البيع والأسواق</h3>
+                <span>🔎</span>
+                <div>
+                    <h3>اختيار المنتج الرابح</h3>
+                    <p>البحث عن أفضل فرصة قابلة للنجاح.</p>
+                </div>
             </div>
 
             <div class="feature">
-                <h3>⏱️ تسليم سريع خلال أقل من 48 ساعة</h3>
+                <span>🎯</span>
+                <div>
+                    <h3>تحليل الزوايا التسويقية</h3>
+                    <p>تقرير كامل للهوكات والكرييتيف.</p>
+                </div>
             </div>
 
             <div class="feature">
-                <h3>📈 تجربة مستخدم احترافية لزيادة الطلبات والأرباح</h3>
+                <span>🚀</span>
+                <div>
+                    <h3>إطلاق الحملات</h3>
+                    <p>إعداد الحسابات وإطلاق أول حملة احترافية.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <span>📈</span>
+                <div>
+                    <h3>Optimization</h3>
+                    <p>تحسين الحملات بشكل يومي.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <span>🤝</span>
+                <div>
+                    <h3>دعم ومتابعة</h3>
+                    <p>اجتماعات أسبوعية + WhatsApp + Google Sheets.</p>
+                </div>
             </div>
 
         </div>
 
-        <div class="hero-buttons">
-            <a href="#" class="primary-btn">اطلب متجرك الآن</a>
-            <a href="#" class="secondary-btn">شاهد أعمالنا</a>
+        <div class="divider"></div>
+
+        <div class="payment-box">
+
+            <h3>الاستثمار</h3>
+
+            <div class="payment-row">
+                <span>قبل بدء العمل</span>
+                <strong>$100</strong>
+            </div>
+
+            <div class="payment-row">
+                <span>بعد أول 20 Lead</span>
+                <strong>$100</strong>
+            </div>
+
+            <div class="payment-row">
+                <span>أول 20 Lead</span>
+                <strong>مجانًا</strong>
+            </div>
+
+            <div class="payment-row">
+                <span>بعد ذلك</span>
+                <strong>7 MAD / Lead</strong>
+            </div>
+
         </div>
 
     </div>
 
 </section>
 
-</body>
-</html>
 
+<section class="pricing-section">
 
+    <div class="pricing-card premium">
 
+        <div class="popular premium-badge">
+            👑 الأكثر شمولاً
+        </div>
 
-<!-- WHY US  -->
-<section class="why-us">
-    <div class="container">
-        <span class="subtitle">ECOMBOOST</span>
-        <h2>لماذا يختارنا أصحاب المتاجر؟</h2>
+        <div class="plan-header">
 
-        <div class="cards">
+            <span class="plan-icon">👑</span>
 
-            <div class="card">
-                <div class="icon">⚡</div>
-                <h3>سرعة تحميل عالية</h3>
-                <p>متاجر سريعة تضمن تجربة سلسة وتقليل نسبة مغادرة الزوار.</p>
+            <h2>باقة Dominate</h2>
+
+            <p class="price">
+                <span>$400</span>
+                <small>/ شهريًا</small>
+            </p>
+
+            <div class="split-payment">
+                الدفع على دفعتين
             </div>
 
-            <div class="card">
-                <div class="icon">📱</div>
-                <h3>متوافق مع جميع الأجهزة</h3>
-                <p>تصميم احترافي يعمل بكفاءة على الجوال والتابلت والكمبيوتر.</p>
+            <p class="description">
+                الحل المتكامل لأصحاب المتاجر الذين يريدون فريقًا يتولى كل شيء من البداية حتى التوسع.
+            </p>
+
+        </div>
+
+        <a href="#" class="cta-btn">
+            ابدأ الآن
+        </a>
+
+        <div class="divider"></div>
+
+        <div class="features">
+
+            <div class="feature">
+                <span>🛒</span>
+                <div>
+                    <h3>بناء متجر احترافي</h3>
+                    <p>Shopify Store + Premium Theme + التطبيقات الأساسية.</p>
+                </div>
             </div>
 
-            <div class="card">
-                <div class="icon">🏆</div>
-                <h3>مظهر احترافي</h3>
-                <p>تصميم يعزز ثقة العميل ويرفع من قيمة علامتك التجارية.</p>
+            <div class="feature">
+                <span>🚀</span>
+                <div>
+                    <h3>Landing Page</h3>
+                    <p>صفحة بيع عالية التحويل مع Copywriting احترافي.</p>
+                </div>
             </div>
 
-            <div class="card">
-                <div class="icon">📈</div>
-                <h3>رفع معدل التحويل</h3>
-                <p>هيكلة مدروسة تساعد على زيادة المبيعات وتحسين النتائج.</p>
+            <div class="feature">
+                <span>🎬</span>
+                <div>
+                    <h3>Creative Strategy</h3>
+                    <p>Hooks + Scripts + زوايا تسويقية + خطة اختبار.</p>
+                </div>
             </div>
 
-            <div class="card">
-                <div class="icon">🌍</div>
-                <h3>متوافق مع جميع الأسواق</h3>
-                <p>مناسب للسعودية والخليج وجميع أسواق الدفع عند الاستلام.</p>
+            <div class="feature">
+                <span>📈</span>
+                <div>
+                    <h3>Ads Management</h3>
+                    <p>Testing + Optimization + Scaling.</p>
+                </div>
             </div>
 
-            <div class="card">
-                <div class="icon">🔒</div>
-                <h3>تجربة مستخدم احترافية</h3>
-                <p>سهولة في التصفح والشراء لتحسين تجربة العميل.</p>
+            <div class="feature">
+                <span>🤝</span>
+                <div>
+                    <h3>Priority Support</h3>
+                    <p>اجتماعات أسبوعية + WhatsApp + متابعة مستمرة.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <span>🎁</span>
+                <div>
+                    <h3>Bonus</h3>
+                    <p>Courses + AI Prompts + Google Sheets + Community.</p>
+                </div>
             </div>
 
         </div>
+
+        <div class="divider"></div>
+
+        <div class="payment-box">
+
+            <h3>الاستثمار</h3>
+
+            <div class="payment-row">
+                <span>قبل بدء العمل</span>
+                <strong>$200</strong>
+            </div>
+
+            <div class="payment-row">
+                <span>بعد أول 30 Lead</span>
+                <strong>$200</strong>
+            </div>
+
+            <div class="payment-row">
+                <span>أول 30 Lead</span>
+                <strong>مجانًا</strong>
+            </div>
+
+            <div class="payment-row">
+                <span>بعد ذلك</span>
+                <strong>8 MAD / Lead</strong>
+            </div>
+
+        </div>
+
     </div>
+
+</section>
+
+<section class="cta-section">
+
+    <div class="cta-content">
+
+        <h2>
+            ابدأ رحلتك بثقة.
+        </h2>
+
+        <p class="cta-text">
+            خلال أول <span>30 يومًا</span>، سنساعدك على اختبار المنتجات،
+            إطلاق الحملات، والعمل نحو تحقيق أولى المبيعات وبناء أساس قوي للتوسع.
+        </p>
+
+        <div class="limited-box">
+
+            🔥 عدد المقاعد محدود كل شهر لضمان مواكبة شخصية ودعم مباشر من فريقنا.
+
+        </div>
+
+        <a href="#" class="cta-button">
+            احجز استشارتك الآن
+        </a>
+
+    </div>
+
+</section>
+<section class="faq-section">
+
+    <div class="faq-heading">
+
+        <span>الأسئلة الشائعة</span>
+
+        <h2>كل ما تحتاج معرفته قبل البدء</h2>
+
+        <p>
+            إذا كان لديك أي سؤال آخر، يمكنك التواصل معنا وسنجيب عليه بكل سرور.
+        </p>
+
+    </div>
+
+    <div class="faq-container">
+
+        <div class="faq-item active">
+
+            <button class="faq-question">
+
+                <span>هل ميزانية الإعلانات مشمولة في الباقة؟</span>
+
+                <span class="faq-icon">+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    لا، ميزانية الإعلانات تُدفع مباشرةً إلى منصة الإعلانات (Meta أو TikTok أو غيرها)، بينما تشمل الباقة جميع خدماتنا من مواكبة، استراتيجيات، مراجعة، ودعم.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                <span>كم أحتاج كميزانية للإعلانات؟</span>
+
+                <span class="faq-icon">+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    ننصح بميزانية لا تقل عن <strong>300 إلى 500 دولار</strong> لاختبار المنتجات والحصول على بيانات كافية لاتخاذ قرارات صحيحة.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                <span>هل تعملون مع جميع الدول؟</span>
+
+                <span class="faq-icon">+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    نعم، نعمل مع معظم أسواق التجارة الإلكترونية، سواء أسواق الدفع عند الاستلام (COD) أو غيرها، ويتم تقييم كل مشروع قبل بدء التعاون.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                <span>كم تستغرق النتائج؟</span>
+
+                <span class="faq-icon">+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    تختلف النتائج حسب المنتج، السوق، والميزانية، لكن هدفنا خلال أول 30 يومًا هو بناء أساس قوي، إطلاق الحملات، وتحليل البيانات للوصول إلى أفضل فرصة للنمو.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                <span>كيف تتم المتابعة؟</span>
+
+                <span class="faq-icon">+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    تحصل على مواكبة مباشرة من فريق EcomBoost، اجتماعات دورية، مراجعات مستمرة، ودعم عبر WhatsApp طوال فترة الاشتراك.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                <span>هل هذا مناسب للمبتدئين؟</span>
+
+                <span class="faq-icon">+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    نعم، سواء كنت تبدأ من الصفر أو لديك متجر قائم، سنساعدك بخطة واضحة تناسب مرحلتك الحالية.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                <span>كيف يتم الدفع؟</span>
+
+                <span class="faq-icon">+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    يتم الدفع بشكل شهري، مع إمكانية تقسيم الدفعة لبعض الباقات حسب الخطة المناسبة.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+
+const faq=document.querySelectorAll(".faq-item");
+
+faq.forEach(item=>{
+
+item.querySelector(".faq-question").onclick=()=>{
+
+item.classList.toggle("active");
+
+}
+
+})
+
+</script>
+<section class="dashboard-section">
+
+    <div class="section-title">
+
+        <span>نتائج حقيقية</span>
+
+        <h2>نتائج ملموسة من أول الأسابيع</h2>
+
+        <p>
+            نتابع الأداء يوميًا ونتخذ القرارات بناءً على البيانات، وليس التخمين.
+        </p>
+
+    </div>
+
+    <div class="dashboard-grid">
+
+        <div class="dashboard-card">
+
+            <img src="https://i.ibb.co/pgb1xhK/1.png" alt="Dashboard">
+
+            <div class="dashboard-overlay">
+
+                <h3>Seller 1</h3>
+
+                <span>Revenue & Orders</span>
+
+            </div>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <img src="https://i.ibb.co/8qBPwvr/2.png" alt="Dashboard">
+
+            <div class="dashboard-overlay">
+
+                <h3>Seller 2</h3>
+
+                <span>Revenue & Orders</span>
+
+            </div>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <img src="https://i.ibb.co/0Vdzd1kR/3.png" alt="Dashboard">
+
+            <div class="dashboard-overlay">
+
+                <h3>Seller 3</h3>
+
+                <span>Revenue & Orders</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="mission-section">
+
+    <div class="mission-container">
+
+        <span class="mission-badge">
+            🚀 مهمتنا
+        </span>
+
+        <h2>
+            نبني مشاريع تنمو، لا متاجر تُطلق فقط.
+        </h2>
+
+        <p>
+            هدفنا ليس فقط مساعدتك على تحقيق أولى المبيعات، بل بناء مشروع تجارة إلكترونية قادر على الاستمرار والنمو، من خلال استراتيجيات عملية، تحليل مستمر، ومواكبة مباشرة في كل مرحلة.
+        </p>
+
+    </div>
+
 </section>
 
 
 
+
+
+
+
+<section class="stats-section">
+
+    <div class="stats-container">
+
+        <div class="stat-card">
+
+            <h2>600+</h2>
+
+            <h3>Creatives Tested</h3>
+
+            <p>اختبرنا مئات الزوايا الإعلانية للوصول إلى أعلى أداء.</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>12+</h2>
+
+            <h3>Ecommerce Stores</h3>
+
+            <p>عملنا مع متاجر إلكترونية في مراحل مختلفة من النمو.</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>GCC & Morocco</h2>
+
+            <h3>Market Specialists</h3>
+
+            <p>خبرة في أسواق الخليج، المغرب، وأسواق COD.</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>24/7</h2>
+
+            <h3>Direct Support</h3>
+
+            <p>مواكبة مباشرة وإجابة على استفساراتك خلال فترة التعاون.</p>
+
+        </div>
+
+    </div>
+
+</section>
+</section>
 </body>
 </html>
